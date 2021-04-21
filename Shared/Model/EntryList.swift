@@ -43,5 +43,31 @@ struct EntryList {
     mutating func removeAll() {
         entriesByTimestamp.removeAll()
     }
+    
+    mutating func recomputeFrom(originalEntries: EntryList, frequency: Frequency, isNumerical: Bool) {
+        removeAll()
+        var orginal = originalEntries.getKnown()
+        if isNumerical {
+            orginal.forEach { add(entry: $0) }
+        } else {
+           // var intervals
+        }
+    }
+    
+    func buildIntervals(freq: Frequency, entries: [Entry]) -> [Interval] {
+        let filtered = entries.filter { $0.entryType == EntryType.yesManual }
+        let num = freq.numerator
+        let den = freq.denominator
+        var intervals = [Interval]()
+        for i in num - 1..<filtered.count {
+            let begin = filtered[i]
+            let center = filtered[i - num + 1]
+            if begin.time.days(until: center.time) < den {
+                let end = begin.time.adding(days: den - 1)
+                intervals.append(Interval(begin: begin.time, center: center.time, end: end))
+            }
+        }
+        return intervals
+    }
 }
 

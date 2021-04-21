@@ -21,6 +21,8 @@
 		C7009897262FBDC600E12CB4 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009892262FBDC600E12CB4 /* Habit.swift */; };
 		C7009898262FBDC600E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009893262FBDC600E12CB4 /* Frequency.swift */; };
 		C7009899262FBDC600E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009893262FBDC600E12CB4 /* Frequency.swift */; };
+		C70098A3263067D900E12CB4 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70098A2263067D900E12CB4 /* Interval.swift */; };
+		C70098A4263067D900E12CB4 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70098A2263067D900E12CB4 /* Interval.swift */; };
 		C7997383262E645F007F4BFD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997382262E645F007F4BFD /* Tests_iOS.swift */; };
 		C799738E262E645F007F4BFD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C799738D262E645F007F4BFD /* Tests_macOS.swift */; };
 		C7997390262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997367262E645D007F4BFD /* LoopHabitTrackerApp.swift */; };
@@ -56,6 +58,7 @@
 		C7009891262FBDC600E12CB4 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		C7009892262FBDC600E12CB4 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		C7009893262FBDC600E12CB4 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		C70098A2263067D900E12CB4 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		C7997367262E645D007F4BFD /* LoopHabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopHabitTrackerApp.swift; sourceTree = "<group>"; };
 		C7997368262E645D007F4BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7997369262E645F007F4BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 				C7009870262FA66400E12CB4 /* EntryList.swift */,
 				C7009877262FAD8400E12CB4 /* Streak.swift */,
 				C700988A262FB9B800E12CB4 /* StreakList.swift */,
+				C70098A2263067D900E12CB4 /* Interval.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70098A3263067D900E12CB4 /* Interval.swift in Sources */,
 				C7009894262FBDC600E12CB4 /* Entry.swift in Sources */,
 				C7009896262FBDC600E12CB4 /* Habit.swift in Sources */,
 				C7997392262E645F007F4BFD /* ContentView.swift in Sources */,
@@ -368,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70098A4263067D900E12CB4 /* Interval.swift in Sources */,
 				C7009895262FBDC600E12CB4 /* Entry.swift in Sources */,
 				C7009897262FBDC600E12CB4 /* Habit.swift in Sources */,
 				C7997393262E645F007F4BFD /* ContentView.swift in Sources */,
