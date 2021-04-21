@@ -4,8 +4,9 @@
 //
 //  Created by Shahriar Nasim Nafi on 20/4/21.
 //
+// Complete
 
-import SwiftUI
+import Foundation
 
 struct Frequency{
     var numerator: Int
