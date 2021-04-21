@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7009866262FA65B00E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009863262FA65B00E12CB4 /* Frequency.swift */; };
-		C7009867262FA65B00E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009863262FA65B00E12CB4 /* Frequency.swift */; };
-		C7009868262FA65B00E12CB4 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009864262FA65B00E12CB4 /* Habit.swift */; };
-		C7009869262FA65B00E12CB4 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009864262FA65B00E12CB4 /* Habit.swift */; };
-		C700986A262FA65B00E12CB4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009865262FA65B00E12CB4 /* Entry.swift */; };
-		C700986B262FA65B00E12CB4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009865262FA65B00E12CB4 /* Entry.swift */; };
 		C7009871262FA66400E12CB4 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009870262FA66400E12CB4 /* EntryList.swift */; };
 		C7009872262FA66400E12CB4 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009870262FA66400E12CB4 /* EntryList.swift */; };
 		C7009878262FAD8400E12CB4 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009877262FAD8400E12CB4 /* Streak.swift */; };
@@ -21,6 +15,12 @@
 		C7009880262FAE9900E12CB4 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700987E262FAE9900E12CB4 /* Date+Ex.swift */; };
 		C700988B262FB9B800E12CB4 /* StreakList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700988A262FB9B800E12CB4 /* StreakList.swift */; };
 		C700988C262FB9B800E12CB4 /* StreakList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700988A262FB9B800E12CB4 /* StreakList.swift */; };
+		C7009894262FBDC600E12CB4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009891262FBDC600E12CB4 /* Entry.swift */; };
+		C7009895262FBDC600E12CB4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009891262FBDC600E12CB4 /* Entry.swift */; };
+		C7009896262FBDC600E12CB4 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009892262FBDC600E12CB4 /* Habit.swift */; };
+		C7009897262FBDC600E12CB4 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009892262FBDC600E12CB4 /* Habit.swift */; };
+		C7009898262FBDC600E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009893262FBDC600E12CB4 /* Frequency.swift */; };
+		C7009899262FBDC600E12CB4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009893262FBDC600E12CB4 /* Frequency.swift */; };
 		C7997383262E645F007F4BFD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997382262E645F007F4BFD /* Tests_iOS.swift */; };
 		C799738E262E645F007F4BFD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C799738D262E645F007F4BFD /* Tests_macOS.swift */; };
 		C7997390262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997367262E645D007F4BFD /* LoopHabitTrackerApp.swift */; };
@@ -49,13 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C7009863262FA65B00E12CB4 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Frequency.swift; path = Shared/Modell/Frequency.swift; sourceTree = SOURCE_ROOT; };
-		C7009864262FA65B00E12CB4 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Habit.swift; path = Shared/Modell/Habit.swift; sourceTree = SOURCE_ROOT; };
-		C7009865262FA65B00E12CB4 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Shared/Modell/Entry.swift; sourceTree = SOURCE_ROOT; };
 		C7009870262FA66400E12CB4 /* EntryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryList.swift; sourceTree = "<group>"; };
 		C7009877262FAD8400E12CB4 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		C700987E262FAE9900E12CB4 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		C700988A262FB9B800E12CB4 /* StreakList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakList.swift; sourceTree = "<group>"; };
+		C7009891262FBDC600E12CB4 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		C7009892262FBDC600E12CB4 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		C7009893262FBDC600E12CB4 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
 		C7997367262E645D007F4BFD /* LoopHabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopHabitTrackerApp.swift; sourceTree = "<group>"; };
 		C7997368262E645D007F4BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7997369262E645F007F4BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 		C7009862262FA62900E12CB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C7009865262FA65B00E12CB4 /* Entry.swift */,
-				C7009863262FA65B00E12CB4 /* Frequency.swift */,
-				C7009864262FA65B00E12CB4 /* Habit.swift */,
+				C7009893262FBDC600E12CB4 /* Frequency.swift */,
+				C7009891262FBDC600E12CB4 /* Entry.swift */,
+				C7009892262FBDC600E12CB4 /* Habit.swift */,
 				C7009870262FA66400E12CB4 /* EntryList.swift */,
 				C7009877262FAD8400E12CB4 /* Streak.swift */,
 				C700988A262FB9B800E12CB4 /* StreakList.swift */,
@@ -352,15 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C700986A262FA65B00E12CB4 /* Entry.swift in Sources */,
+				C7009894262FBDC600E12CB4 /* Entry.swift in Sources */,
+				C7009896262FBDC600E12CB4 /* Habit.swift in Sources */,
 				C7997392262E645F007F4BFD /* ContentView.swift in Sources */,
 				C7009871262FA66400E12CB4 /* EntryList.swift in Sources */,
 				C7009878262FAD8400E12CB4 /* Streak.swift in Sources */,
 				C700988B262FB9B800E12CB4 /* StreakList.swift in Sources */,
 				C7997390262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */,
-				C7009868262FA65B00E12CB4 /* Habit.swift in Sources */,
+				C7009898262FBDC600E12CB4 /* Frequency.swift in Sources */,
 				C700987F262FAE9900E12CB4 /* Date+Ex.swift in Sources */,
-				C7009866262FA65B00E12CB4 /* Frequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,15 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C700986B262FA65B00E12CB4 /* Entry.swift in Sources */,
+				C7009895262FBDC600E12CB4 /* Entry.swift in Sources */,
+				C7009897262FBDC600E12CB4 /* Habit.swift in Sources */,
 				C7997393262E645F007F4BFD /* ContentView.swift in Sources */,
 				C7009872262FA66400E12CB4 /* EntryList.swift in Sources */,
 				C7009879262FAD8400E12CB4 /* Streak.swift in Sources */,
 				C700988C262FB9B800E12CB4 /* StreakList.swift in Sources */,
 				C7997391262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */,
-				C7009869262FA65B00E12CB4 /* Habit.swift in Sources */,
+				C7009899262FBDC600E12CB4 /* Frequency.swift in Sources */,
 				C7009880262FAE9900E12CB4 /* Date+Ex.swift in Sources */,
-				C7009867262FA65B00E12CB4 /* Frequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
