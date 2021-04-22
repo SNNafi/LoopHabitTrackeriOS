@@ -31,6 +31,10 @@
 		C7997393262E645F007F4BFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997368262E645D007F4BFD /* ContentView.swift */; };
 		C7997394262E645F007F4BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7997369262E645F007F4BFD /* Assets.xcassets */; };
 		C7997395262E645F007F4BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7997369262E645F007F4BFD /* Assets.xcassets */; };
+		C7D6DCE52631F85000CA1623 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCE42631F85000CA1623 /* Color+Ex.swift */; };
+		C7D6DCE62631F85000CA1623 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCE42631F85000CA1623 /* Color+Ex.swift */; };
+		C7D6DCEC2631FA0800CA1623 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */; };
+		C7D6DCED2631FA0800CA1623 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,8 @@
 		C7997389262E645F007F4BFD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C799738D262E645F007F4BFD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		C799738F262E645F007F4BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D6DCE42631F85000CA1623 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
+		C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				C7009877262FAD8400E12CB4 /* Streak.swift */,
 				C700988A262FB9B800E12CB4 /* StreakList.swift */,
 				C70098A2263067D900E12CB4 /* Interval.swift */,
+				C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C700987E262FAE9900E12CB4 /* Date+Ex.swift */,
+				C7D6DCE42631F85000CA1623 /* Color+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,9 +371,11 @@
 				C7009871262FA66400E12CB4 /* EntryList.swift in Sources */,
 				C7009878262FAD8400E12CB4 /* Streak.swift in Sources */,
 				C700988B262FB9B800E12CB4 /* StreakList.swift in Sources */,
+				C7D6DCE52631F85000CA1623 /* Color+Ex.swift in Sources */,
 				C7997390262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */,
 				C7009898262FBDC600E12CB4 /* Frequency.swift in Sources */,
 				C700987F262FAE9900E12CB4 /* Date+Ex.swift in Sources */,
+				C7D6DCEC2631FA0800CA1623 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +390,11 @@
 				C7009872262FA66400E12CB4 /* EntryList.swift in Sources */,
 				C7009879262FAD8400E12CB4 /* Streak.swift in Sources */,
 				C700988C262FB9B800E12CB4 /* StreakList.swift in Sources */,
+				C7D6DCE62631F85000CA1623 /* Color+Ex.swift in Sources */,
 				C7997391262E645F007F4BFD /* LoopHabitTrackerApp.swift in Sources */,
 				C7009899262FBDC600E12CB4 /* Frequency.swift in Sources */,
 				C7009880262FAE9900E12CB4 /* Date+Ex.swift in Sources */,
+				C7D6DCED2631FA0800CA1623 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
