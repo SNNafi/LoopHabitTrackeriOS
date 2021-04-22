@@ -68,9 +68,9 @@ extension Date {
     }
     
     func weekDay(firstWeekDay: WeekDay) -> Int {
-         var calendar = Calendar(identifier: .gregorian)
+        var calendar = Calendar(identifier: .gregorian)
         calendar.firstWeekday = firstWeekDay.rawValue
-         return (calendar.component(.weekday, from: self) - calendar.firstWeekday + 7) % 7 + 1
+        return (calendar.component(.weekday, from: self) - calendar.firstWeekday + 7) % 7 + 1
     }
 }
 

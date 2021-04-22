@@ -46,7 +46,7 @@ struct EntryList {
     }
     
     ///  Returns the total number of successful entries for each month, grouped by day of week.  The checkmarks are returned in a `Dictionary`. The key is the date for the first day of the month, at midnight (00:00). The value is an integer array with 7 entries. The first entry contains the total number of successful checkmarks during the specified month that occurred on the first day of week of the system's`Locale` and nexts days.  The first day of week can alse be setted by `firstWeekDay`. If there are no successful checkmarks during a certain month, the value is null.  __return__ total number of checkmarks by month versus day of week
-
+    
     func computeWeekdayFrequency(isNumerical: Bool, firstWeekDay: WeekDay? = nil) -> [Date: [Int]] {
         let entries = getKnown()
         var dictionary = [Date: [Int]]()
@@ -139,14 +139,14 @@ struct EntryList {
             if interval.end > to { to = interval.end }
         }
         
-        // Create unknown entries
+        // Create `.unknown` entries
         var current = to
         while current >= from {
             result.append(Entry(time: current, entryType: .unknown))
             current = current.adding(days: -1)
         }
         
-        // Create YES_AUTO entries
+        // Create '.yesAuto' entries
         intervals.forEach {
             current = $0.end
             while current >= $0.begin {
@@ -172,16 +172,16 @@ extension Array where Element == Entry {
     
     
     /// Given a list of entries, truncates the date of each entry (according to the `Calendar.Component` given), groups the entries according to this truncated date, then creates a new entry (t,v) for each group, where t is the truncated date and v is the sum of the `rawValues` the `EntryType` of all entries in the group.
-     
+    
     ///  For numerical habits, non-positive entry values are converted to `zero`. For boolean habits, each `.yesManual` value is converted to `1000` and all other values are converted to `zero`.
-     
+    
     ///  The returned list is sorted by timestamp, with the newest entry coming first and the oldest entry coming last. If the original list has gaps in it (for example, weeks or months without any entries), then the list produced by this method will also have gaps.
     
     ///  I think this is not needed as `firstWeekDay` automatically changed by the system according to `Locale`
     func groupedSum(truncateComponent: Calendar.Component, isNumerical: Bool, firstWeekDay: WeekDay? = nil) -> [Entry] {
-       var entries = self.map { (entry) -> Entry in
+        var entries = self.map { (entry) -> Entry in
             if isNumerical {
-               return Entry(time: entry.time, entryType: EntryType.init(rawValue: Swift.max(0, entry.entryType.rawValue)))
+                return Entry(time: entry.time, entryType: EntryType.init(rawValue: Swift.max(0, entry.entryType.rawValue)))
             } else {
                 return Entry(time: entry.time, entryType: entry.entryType == .yesManual ? .init(rawValue: 1000) : .no)
             }
@@ -192,7 +192,7 @@ extension Array where Element == Entry {
         } else {
             entries = entries.map { Entry(time: $0.time.startOf(truncateComponent, firstWeekDay: firstWeekDay!), entryType: $0.entryType) }
         }
-       
+        
         let entriesDic = Dictionary(grouping: entries, by: { $0.time })
         
         return entriesDic.map { (date, entries) -> Entry in
