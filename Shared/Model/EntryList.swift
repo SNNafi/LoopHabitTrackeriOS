@@ -45,8 +45,12 @@ struct EntryList {
         entriesByDate.removeAll()
     }
     
-    ///  Returns the total number of successful entries for each month, grouped by day of week.  The checkmarks are returned in a `Dictionary`. The key is the date for the first day of the month, at midnight (00:00). The value is an integer array with 7 entries. The first entry contains the total number of successful checkmarks during the specified month that occurred on the first day of week of the system's`Locale` and nexts days.  The first day of week can alse be setted by `firstWeekDay`. If there are no successful checkmarks during a certain month, the value is null.  __return__ total number of checkmarks by month versus day of week
-    
+    /**
+     Returns the total number of successful entries for each month, grouped by day of week.
+     
+     The checkmarks are returned in a `Dictionary`. The key is the date for the first day of the month, at midnight (00:00). The value is an integer array with 7 entries. The first entry contains the total number of successful checkmarks during the specified month that occurred on the first day of week of the system's`Locale` and nexts days.  The first day of week can alse be setted by `firstWeekDay`. If there are no successful checkmarks during a certain month, the value is null.
+     - Returns: total number of checkmarks by month versus day of week
+    */
     func computeWeekdayFrequency(isNumerical: Bool, firstWeekDay: WeekDay? = nil) -> [Date: [Int]] {
         let entries = getKnown()
         var dictionary = [Date: [Int]]()
