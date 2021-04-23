@@ -4,11 +4,12 @@
 //
 //  Created by Shahriar Nasim Nafi on 23/4/21.
 //
+// Complete
 
 import SwiftUI
 
-enum ColorPalette {
-    case red
+enum ColorPalette: Int, CaseIterable {
+    case red = 0
     case deepOrange
     case orange
     case amber
@@ -71,6 +72,15 @@ enum ColorPalette {
             return Color(rgba: 0x757575)
         case .lightGrey:
             return Color(rgba: 0xAAAAAA)
+        }
+    }
+    func compare(to colorPalette: ColorPalette) -> Compare {
+        if self.rawValue == colorPalette.rawValue {
+            return Compare.equal
+        } else if self.rawValue > colorPalette.rawValue {
+            return Compare.greaterThan
+        } else {
+            return Compare.lowerThan
         }
     }
 }

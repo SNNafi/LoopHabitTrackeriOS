@@ -110,7 +110,7 @@ struct EntryList {
     /// The intervals should be sorted by date. The first element in the list should  correspond to the newest interval.
     
     static func snapIntervalsTogether(intervals: inout [Interval]) {
-        for i in 0..<intervals.count {
+        for i in 1..<intervals.count {
             let current = intervals[i]
             let next = intervals[i - 1]
             let gapNextToCurrent = next.begin.days(until: current.end)

@@ -9,16 +9,26 @@ import Foundation
 
 extension Date {
     
-    /// Returns -1 if this date is older than the given date, 1 if this timestamp is newer, or zero if they are equal.
+    /// Returns -1 if this date is older than the given date, 1 if this date is newer, or zero if they are equal.
     func compare(to date: Date) -> CompareDate {
-        if self == date {
-            return .equal
-        } else if self < date {
-            return .older
-        } else {
-            return .newer
-        }
+//        if self == date {
+//            return .equal
+//        } else if self < date {
+//            return .older
+//        } else {
+//            return .newer
+//        }
+        return CompareDate(rawValue: Int((self.timeIntervalSince1970 - date.timeIntervalSince1970)).signum())!
     }
+    
+    
+    func isNewer(than: Date) -> Bool {
+        return compare(to: than).rawValue > 0
+    }
+    
+    func isOlder(than: Date) -> Bool {
+            return compare(to: than).rawValue < 0
+        }
     
     /// Returns the number of days between this date and the given one. If the other date equals this one, returns zero. If the other timestamp is older than this one, returns a negative number.
     
