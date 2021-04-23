@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1209101E0FCFE83B21A5D8C5 /* Pods_LoopHabitTracker__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B651D62C92E47C995645589B /* Pods_LoopHabitTracker__macOS_.framework */; };
 		C7009871262FA66400E12CB4 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009870262FA66400E12CB4 /* EntryList.swift */; };
 		C7009872262FA66400E12CB4 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009870262FA66400E12CB4 /* EntryList.swift */; };
 		C7009878262FAD8400E12CB4 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009877262FAD8400E12CB4 /* Streak.swift */; };
@@ -53,6 +54,7 @@
 		C7D6DCE62631F85000CA1623 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCE42631F85000CA1623 /* Color+Ex.swift */; };
 		C7D6DCEC2631FA0800CA1623 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */; };
 		C7D6DCED2631FA0800CA1623 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */; };
+		F76ED9773953595584F0CDED /* Pods_LoopHabitTracker__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A99E6FC994A6DE3D90D5D13 /* Pods_LoopHabitTracker__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A99E6FC994A6DE3D90D5D13 /* Pods_LoopHabitTracker__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoopHabitTracker__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B7799819467F2A0A59658 /* Pods-LoopHabitTracker (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopHabitTracker (iOS).release.xcconfig"; path = "Target Support Files/Pods-LoopHabitTracker (iOS)/Pods-LoopHabitTracker (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		96E02791B88CE463DB8A7773 /* Pods-LoopHabitTracker (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopHabitTracker (macOS).release.xcconfig"; path = "Target Support Files/Pods-LoopHabitTracker (macOS)/Pods-LoopHabitTracker (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		B651D62C92E47C995645589B /* Pods_LoopHabitTracker__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoopHabitTracker__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7009870262FA66400E12CB4 /* EntryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryList.swift; sourceTree = "<group>"; };
 		C7009877262FAD8400E12CB4 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		C700987E262FAE9900E12CB4 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
@@ -106,6 +112,8 @@
 		C7A96EC1263301DE00021C7C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C7D6DCE42631F85000CA1623 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 		C7D6DCEB2631FA0700CA1623 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		D4207C8E66511FD50CAFD488 /* Pods-LoopHabitTracker (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopHabitTracker (macOS).debug.xcconfig"; path = "Target Support Files/Pods-LoopHabitTracker (macOS)/Pods-LoopHabitTracker (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		DB67FEB2E2A32A43BF3F0A72 /* Pods-LoopHabitTracker (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoopHabitTracker (iOS).debug.xcconfig"; path = "Target Support Files/Pods-LoopHabitTracker (iOS)/Pods-LoopHabitTracker (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76ED9773953595584F0CDED /* Pods_LoopHabitTracker__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1209101E0FCFE83B21A5D8C5 /* Pods_LoopHabitTracker__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +150,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ADCF843AF5B03AE4EE77B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A99E6FC994A6DE3D90D5D13 /* Pods_LoopHabitTracker__iOS_.framework */,
+				B651D62C92E47C995645589B /* Pods_LoopHabitTracker__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		961708330189E27A6C7FE5BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB67FEB2E2A32A43BF3F0A72 /* Pods-LoopHabitTracker (iOS).debug.xcconfig */,
+				834B7799819467F2A0A59658 /* Pods-LoopHabitTracker (iOS).release.xcconfig */,
+				D4207C8E66511FD50CAFD488 /* Pods-LoopHabitTracker (macOS).debug.xcconfig */,
+				96E02791B88CE463DB8A7773 /* Pods-LoopHabitTracker (macOS).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C7009862262FA62900E12CB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +213,8 @@
 				C7997381262E645F007F4BFD /* Tests iOS */,
 				C799738C262E645F007F4BFD /* Tests macOS */,
 				C799736F262E645F007F4BFD /* Products */,
+				961708330189E27A6C7FE5BC /* Pods */,
+				4ADCF843AF5B03AE4EE77B29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7997398262E645F007F4BFD /* Build configuration list for PBXNativeTarget "LoopHabitTracker (iOS)" */;
 			buildPhases = (
+				9F3EA2DB9EC335DE79672347 /* [CP] Check Pods Manifest.lock */,
 				C799736A262E645F007F4BFD /* Sources */,
 				C799736B262E645F007F4BFD /* Frameworks */,
 				C799736C262E645F007F4BFD /* Resources */,
+				08158218BA19E59C2D5991B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C799739B262E645F007F4BFD /* Build configuration list for PBXNativeTarget "LoopHabitTracker (macOS)" */;
 			buildPhases = (
+				FD74910858B0F0DCCE78A00D /* [CP] Check Pods Manifest.lock */,
 				C7997372262E645F007F4BFD /* Sources */,
 				C7997373262E645F007F4BFD /* Frameworks */,
 				C7997374262E645F007F4BFD /* Resources */,
+				2C06BCDF8921DD0A2BC71096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,6 +431,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08158218BA19E59C2D5991B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (iOS)/Pods-LoopHabitTracker (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (iOS)/Pods-LoopHabitTracker (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (iOS)/Pods-LoopHabitTracker (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C06BCDF8921DD0A2BC71096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (macOS)/Pods-LoopHabitTracker (macOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (macOS)/Pods-LoopHabitTracker (macOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoopHabitTracker (macOS)/Pods-LoopHabitTracker (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3EA2DB9EC335DE79672347 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoopHabitTracker (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD74910858B0F0DCCE78A00D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoopHabitTracker (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C799736A262E645F007F4BFD /* Sources */ = {
@@ -597,6 +715,7 @@
 		};
 		C7997399262E645F007F4BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB67FEB2E2A32A43BF3F0A72 /* Pods-LoopHabitTracker (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -619,6 +738,7 @@
 		};
 		C799739A262E645F007F4BFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834B7799819467F2A0A59658 /* Pods-LoopHabitTracker (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -642,6 +762,7 @@
 		};
 		C799739C262E645F007F4BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4207C8E66511FD50CAFD488 /* Pods-LoopHabitTracker (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -666,6 +787,7 @@
 		};
 		C799739D262E645F007F4BFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E02791B88CE463DB8A7773 /* Pods-LoopHabitTracker (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
