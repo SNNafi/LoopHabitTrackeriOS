@@ -31,6 +31,10 @@ struct HabitRecord: Identifiable, Equatable {
     var unit: String
     var uuid: String
     
+    static var databaseTableName: String {
+        "habits"
+    }
+    
     mutating func copy(from habit: Habit) {
         id = habit.id
         name = habit.name
@@ -104,7 +108,7 @@ extension HabitRecord: Codable, FetchableRecord, MutablePersistableRecord  {
         
     }
     
-    /// Updates a player id after it has been inserted in the database.
+    /// Updates a record i.e. `Habit`'s id after it has been inserted in the database.
     mutating func didInsert(with rowID: Int64, for column: String?) {
         id = rowID
     }
