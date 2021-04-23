@@ -21,7 +21,7 @@ struct StreakList {
         streakList.removeAll()
         let dates = computedEntries
             .getByInterval(from: from, to: to)
-            .filter { $0.entryType.rawValue  > 0 }
+            .filter { $0.value.rawValue  > 0 }
             .map { $0.time }
         if dates.isEmpty { return }
         var begin = dates[0]

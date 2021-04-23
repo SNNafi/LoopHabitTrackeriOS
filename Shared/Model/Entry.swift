@@ -10,10 +10,10 @@ import Foundation
 
 struct Entry {
     let time: Date
-    let entryType: EntryType
+    let value: EntryValue
     
-    func nextToggleValueWithSkip(entryType: EntryType) -> EntryType {
-        switch entryType {
+    func nextToggleValueWithSkip(value: EntryValue) -> EntryValue {
+        switch value {
         case .no , .unknown, .yesAuto, .other(_):
             return .yesManual
         case .yesManual:
@@ -22,8 +22,8 @@ struct Entry {
             return .no
         }
     }
-    func nextToggleValueWithoutSkip(entryType: EntryType) -> EntryType {
-        switch entryType {
+    func nextToggleValueWithoutSkip(value: EntryValue) -> EntryValue {
+        switch value {
         case .no , .unknown, .yesAuto, .other(_):
             return .yesManual
         default:
@@ -34,7 +34,7 @@ struct Entry {
 }
 
 
-enum EntryType{
+enum EntryValue{
     /// Value indicating that no data is available for the given timestamp.
     case unknown
     /// Value indicating that the user did not perform the habit, even though they were expected to perform it.
@@ -84,8 +84,8 @@ enum EntryType{
     }
 }
 
-extension EntryType: Equatable {
-    static func ==(lhs: EntryType, rhs: EntryType) -> Bool {
+extension EntryValue: Equatable {
+    static func ==(lhs: EntryValue, rhs: EntryValue) -> Bool {
         return lhs.rawValue == rhs.rawValue
     }
 }

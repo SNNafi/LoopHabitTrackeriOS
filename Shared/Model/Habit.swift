@@ -11,10 +11,10 @@
 import SwiftUI
 
 struct Habit {
-    var color: Color = ColorPalette(rawValue: 8)!.color
+    var color: ColorPalette = ColorPalette(rawValue: 8)!
     var description: String = ""
     var frequency: Frequency = Frequency.daily
-    var id: Int? = nil
+    var id: Int64? = nil
     var isArchived: Bool = false
     var name: String = ""
     var position: Int = 0
@@ -44,15 +44,15 @@ struct Habit {
     
     var isCompletedToday: Bool {
         let today = Date()
-        let entryType = computedEntries.get(date: today).entryType
+        let value = computedEntries.get(date: today).value
         if isNumerical {
             if targetType == .atLeast {
-                return Double(entryType.rawValue) / 1000.0 >= targetValue
+                return Double(value.rawValue) / 1000.0 >= targetValue
             } else {
-                return Double(entryType.rawValue) / 1000.0 <= targetValue
+                return Double(value.rawValue) / 1000.0 <= targetValue
             }
         } else {
-            return entryType != .no && entryType != .unknown
+            return value != .no && value != .unknown
         }
     }
     

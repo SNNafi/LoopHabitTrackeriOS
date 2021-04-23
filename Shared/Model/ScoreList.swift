@@ -39,7 +39,7 @@ struct ScoreList {
         var numerator = frequency.numerator
         var denominator = frequency.denominator
         let freq = frequency.toDouble()
-        let entryTypes = computedEntries.getByInterval(from: from, to: to).map { $0.entryType.rawValue }
+        let values = computedEntries.getByInterval(from: from, to: to).map { $0.value.rawValue }
         
         // For non-daily boolean habits, we double the numerator and the denominator to smooth
         // out irregular repetition schedules (for example, weekly habits performed on different
@@ -49,25 +49,25 @@ struct ScoreList {
             denominator *= 2
         }
         var previousValue = 0.0
-        for i in entryTypes {
-            let offset = entryTypes.count - i - 1
+        for i in values {
+            let offset = values.count - i - 1
             if isNumerical {
-                rollingSum += Double(entryTypes[offset])
-                if offset + denominator < entryTypes.count {
-                    rollingSum -= Double(entryTypes[offset + denominator])
+                rollingSum += Double(values[offset])
+                if offset + denominator < values.count {
+                    rollingSum -= Double(values[offset + denominator])
                 }
                 let percentageCompleted = min(1.0, rollingSum / 1000 / targetValue)
                 previousValue = Score.compute(frequency: freq, previousScore: previousValue, checkmarkValue: percentageCompleted)
             } else {
-                if entryTypes[offset] == EntryType.yesManual.rawValue {
+                if values[offset] == EntryValue.yesManual.rawValue {
                     rollingSum += 1.0
                 }
-                if offset + denominator < entryTypes.count {
-                    if entryTypes[offset + denominator] == EntryType.yesManual.rawValue {
+                if offset + denominator < values.count {
+                    if values[offset + denominator] == EntryValue.yesManual.rawValue {
                         rollingSum -= 1.0
                     }
                 }
-                if entryTypes[offset] != EntryType.skip.rawValue {
+                if values[offset] != EntryValue.skip.rawValue {
                     let percentageCompleted = min(1.0, rollingSum / Double(numerator))
                     previousValue = Score.compute(frequency: freq, previousScore: previousValue, checkmarkValue: percentageCompleted)
                 }

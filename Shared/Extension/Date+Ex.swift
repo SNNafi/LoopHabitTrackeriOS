@@ -62,25 +62,52 @@ extension Date {
         return startOfComponent
     }
     
-    func startOf(_ dateComponent: Calendar.Component, firstWeekDay: WeekDay) -> Date {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.firstWeekday = firstWeekDay.rawValue
-        calendar.timeZone = TimeZone.autoupdatingCurrent
-        var startOfComponent = self
-        var timeInterval : TimeInterval = 0.0
-        calendar.dateInterval(of: dateComponent, start: &startOfComponent, interval: &timeInterval, for: self)
-        return startOfComponent
-    }
+//    func startOf(_ dateComponent: Calendar.Component, firstWeekDay: WeekDay) -> Date {
+//        var calendar = Calendar(identifier: .gregorian)
+//        calendar.firstWeekday = firstWeekDay.rawValue
+//        calendar.timeZone = TimeZone.autoupdatingCurrent
+//        var startOfComponent = self
+//        var timeInterval : TimeInterval = 0.0
+//        calendar.dateInterval(of: dateComponent, start: &startOfComponent, interval: &timeInterval, for: self)
+//        return startOfComponent
+//    }
     
     func weekDay() -> Int {
         let calendar = Calendar.current
         return (calendar.component(.weekday, from: self) - calendar.firstWeekday + 7) % 7 + 1
     }
     
-    func weekDay(firstWeekDay: WeekDay) -> Int {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.firstWeekday = firstWeekDay.rawValue
-        return (calendar.component(.weekday, from: self) - calendar.firstWeekday + 7) % 7 + 1
+//    func weekDay(firstWeekDay: WeekDay) -> Int {
+//        var calendar = Calendar(identifier: .gregorian)
+//        calendar.firstWeekday = firstWeekDay.rawValue
+//        return (calendar.component(.weekday, from: self) - calendar.firstWeekday + 7) % 7 + 1
+//    }
+    
+    var hour: Int {
+        let calendar = Calendar.current
+        return calendar.component(.hour, from: self)
+    }
+    
+    var minute: Int {
+        let calendar = Calendar.current
+        return calendar.component(.minute, from: self)
+    }
+    
+    var dayOfTheWeek: WeekDay {
+        let calendar = Calendar.current
+        return WeekDay(rawValue: calendar.component(.weekday, from: self))!
+    }
+    
+    var month: Int {
+        let calendar = Calendar.current
+        return calendar.component(.month, from: self)
+    }
+    
+    static func from(hour: Int, minutes: Int) -> Date {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter.date(from: "\(hour):\(minutes)")!
+//        let finalTime = formatter.string(from: time)
     }
 }
 
