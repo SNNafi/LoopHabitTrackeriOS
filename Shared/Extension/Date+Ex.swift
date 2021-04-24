@@ -93,6 +93,11 @@ extension Date {
         return calendar.component(.minute, from: self)
     }
     
+    var day: Int {
+        let calendar = Calendar.current
+        return calendar.component(.day, from: self)
+    }
+    
     var dayOfTheWeek: WeekDay {
         let calendar = Calendar.current
         return WeekDay(rawValue: calendar.component(.weekday, from: self))!
@@ -101,6 +106,15 @@ extension Date {
     var month: Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: self)
+    }
+    
+    var year: Int {
+        let calendar = Calendar.current
+        return calendar.component(.year, from: self)
+    }
+    
+    var dayMonthYear: Int {
+        Int("\(day)\(month)\(year)")!
     }
     
     static func from(hour: Int, minutes: Int) -> Date {
